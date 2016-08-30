@@ -31,6 +31,24 @@ $RECYCLE.BIN/
 # Thumbnails
 ._*
 
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/AssetStoreTools*
+
+# Unity3D generated meta files
+*.pidb.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.unitypackage
+
+
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd
