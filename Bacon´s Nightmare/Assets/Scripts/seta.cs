@@ -15,7 +15,7 @@ public class seta : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 	}
 	
-	void Update () {
+	void FixedUpdate () {
 		transform.Translate (new Vector2 (0, plataform_SPD / 100));
 		if (plat.GetComponent<terra> ().avancar == true) {
 			plataform_SPD = Mathf.Abs (plataform_SPD);

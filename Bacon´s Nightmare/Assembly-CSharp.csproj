@@ -67,6 +67,7 @@
      <Compile Include="Assets\ir_pra_plataforma.cs" />
      <Compile Include="Assets\platController.cs" />
      <Compile Include="Assets\platVertical.cs" />
+     <Compile Include="Assets\plataformaAlpha.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

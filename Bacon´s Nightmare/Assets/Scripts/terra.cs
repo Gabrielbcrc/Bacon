@@ -15,7 +15,7 @@ public class terra : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 	//	plataform_SPD = seta.GetComponent<plataforma> ().plataform_SPD;
 //		Debug.Log (avancar);
 		//Seta a posição da Terra para a posição da Seta
