@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
+     <Compile Include="Assets\Scripts\PlatformMovement.cs" />
      <Compile Include="Assets\Scripts\Referencias\GerenciadorSave.cs" />
      <Compile Include="Assets\Scripts\Referencias\Mariov1 (2).cs" />
      <Compile Include="Assets\Scripts\Referencias\Mariov2.cs" />
