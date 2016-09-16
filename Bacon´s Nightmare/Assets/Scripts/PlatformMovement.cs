@@ -19,11 +19,16 @@ public class PlatformMovement : MonoBehaviour
 	[SerializeField]
 	private Transform transformB;
 
+	[SerializeField]
+	private Transform transformA;
+
 	// Use this for initialization
 	void Start () {
 
-		posA = childTransform.localPosition;
+		//posA = childTransform.localPosition;
+		posA = transformA.localPosition;
 		posB = transformB.localPosition;
+
 		nexPos = posB;
 	}
 	
@@ -41,6 +46,7 @@ public class PlatformMovement : MonoBehaviour
 	
 	}
 	private void ChangeDestination(){
+//		nexPos = nexPos != posA ? posA : posB;
 		nexPos = nexPos != posA ? posA : posB;
 	}
 }

@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\seta.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Antonito.cs">
     <Files>
+      <File FileName="Assets\Scripts\PlatformMovement.cs" Line="22" Column="2" />
+      <File FileName="Assets\Scripts\terra.cs" Line="26" Column="30" />
       <File FileName="Assets\Scripts\limite.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\terra.cs" Line="18" Column="12" />
-      <File FileName="Assets\Scripts\seta.cs" Line="18" Column="8" />
-      <File FileName="Assets\Scripts\Antonito.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\seta.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Antonito.cs" Line="147" Column="39" />
       <File FileName="Assets\Evento1.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\LevelManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BorboletaController.cs" Line="1" Column="1" />

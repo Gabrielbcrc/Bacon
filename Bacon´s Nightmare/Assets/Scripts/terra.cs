@@ -24,7 +24,6 @@ public class terra : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D algo){
 		if (algo.tag == "limite") {
-			Debug.Log ("vira");
 			avancar = !avancar;
 		}
 	}
