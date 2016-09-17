@@ -8,11 +8,13 @@ public class LevelManager : MonoBehaviour
 	GameObject borboleta;
 	public GameObject currentCheckpoint;
 	public Antonito porco;
+	public GameObject balaoBorboleta;
 	float x,y,z;
 	public int checkPoint = 0;
 	// Use this for initialization
 	void Start () 
 	{
+		balaoBorboleta.SetActive(false);
 		porco = (Antonito) FindObjectOfType(typeof(Antonito));
 		if(GameObject.Find ("Borboleta") != null )
 		{
@@ -38,8 +40,19 @@ public class LevelManager : MonoBehaviour
 		{
 			porco.transform.eulerAngles = new Vector2 (0, 180);
 		}
+
+		if (PlayerPrefs.GetInt("Cena") == 1)
+		{
+			Invoke("ativarBalao", 2);
+			balaoBorboleta.transform.position = new Vector2 (porco.transform.position.x +0.75f, porco.transform.position.y + 2);
+			Invoke("desativarBalao", 4f);
+		}
 	}
-	
+
+	void FixedUpdate()
+	{
+		balaoBorboleta.transform.position = new Vector2 (porco.transform.position.x +0.75f, porco.transform.position.y + 2);
+	}
 	// Update is called once per frame
 	void Update () 
 	{
@@ -77,5 +90,15 @@ public class LevelManager : MonoBehaviour
 	public void deleteSaves()
 	{
 		PlayerPrefs.DeleteAll ();
+	}
+
+	void desativarBalao()
+	{
+		balaoBorboleta.SetActive (false);
+	}
+
+	void ativarBalao()
+	{
+		balaoBorboleta.SetActive (true);
 	}
 }

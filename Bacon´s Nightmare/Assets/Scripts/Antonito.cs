@@ -25,7 +25,7 @@ public class Antonito : MonoBehaviour
 	float groundRadius = 0.2f;
 	//float vSpeed;
 	public int life;
-	bool isEvent;
+	public bool isEvent;
 	float vSpeed;
 	bool triggerOnce;
 	bool gameover;
@@ -37,10 +37,11 @@ public class Antonito : MonoBehaviour
 		//fade = GameObject.Find("Fade");
 		//fade = (Fade) FindObjectOfType(typeof(Fade));
 		triggerOnce = true;
-		isEvent = false;
+		//isEvent = true;
 		levelManager = FindObjectOfType<LevelManager> ();
 		cameraPos = GameObject.Find("Main Camera");
 		warning.SetActive (false);
+
 		gameover = false;
 		rgb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
@@ -50,13 +51,14 @@ public class Antonito : MonoBehaviour
 		pulo = sounds[1];
 		susto = sounds[2];
 		//walk = sounds[3];
-		Invoke("unblockPlayer", 3);
+		Invoke("unblockPlayer", 3f);
 		//PlayerPrefs.DeleteAll (); //deletar todos os prefs TEMPORARIO
 		//fade.fadeIn();
 
+
 		if(PlayerPrefs.HasKey("x"))
 		{
-			isEvent = false;
+			//isEvent = false;
 			levelManager.loadCheckpoint();
 		}
 		if(!PlayerPrefs.HasKey("Cena"))
@@ -239,4 +241,5 @@ public class Antonito : MonoBehaviour
 	{
 		isEvent = false;
 	}
+
 }
