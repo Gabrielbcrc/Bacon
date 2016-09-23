@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CobraController : MonoBehaviour 
 {
-	/*
+
 	Animator anim;
 	bool walkLimit;
 	Vector2 posInicial;
@@ -46,7 +46,7 @@ public class CobraController : MonoBehaviour
 		transform.Translate (new Vector2 (3, 0) * Time.deltaTime);
 	}
 }
-*/
+/*
 		private Vector3 posA;
 
 		private Vector3 posB;
@@ -93,4 +93,4 @@ public class CobraController : MonoBehaviour
 			//		nexPos = nexPos != posA ? posA : posB;
 			nexPos = nexPos != posA ? posA : posB;
 		}
-	}
+	}*/

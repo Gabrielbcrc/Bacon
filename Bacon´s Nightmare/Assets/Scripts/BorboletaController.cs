@@ -21,6 +21,7 @@ public class BorboletaController : MonoBehaviour
 
 		target = GameObject.Find ("Antonito");
 		posInicial = transform.position;
+
 		estado = "entrada";
 		limites = new Vector2 (transform.position.y + 0.2f, transform.position.y - 0.2f);
 
@@ -73,13 +74,21 @@ public class BorboletaController : MonoBehaviour
 			estado = "espera";
 			Invoke ("modoEntrada", 3);
 		}
+
+		if (limites.y < target.transform.position.y + 2.2f) {
+			transform.Translate (new Vector2 (0, 1) * Time.deltaTime);
+			limites = new Vector2 (limites.x, limites.y + 0.1f);
+		}else if (limites.y > target.transform.position.y - 2.2f) {
+			transform.Translate (new Vector2 (0, -1) * Time.deltaTime);
+			limites = new Vector2 (limites.x, limites.y - 0.1f);
+		}
 	}
 
 	void moverVertical(){
 		transform.Translate (new Vector2 (-velocidade, 0) * Time.deltaTime);
 
 		if (direcao) {
-			if (transform.position.y > limites.x)
+			if (transform.position.y > limites.y)
 				direcao = false;
 
 			transform.Translate (new Vector2 (0, 1) * Time.deltaTime);

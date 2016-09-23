@@ -16,6 +16,7 @@ public class LevelManager : MonoBehaviour
 	{
 		balaoBorboleta.SetActive(false);
 		porco = (Antonito) FindObjectOfType(typeof(Antonito));
+		//porco = GameObject.Find ("Antonito!").GetComponent<Antonito> ();
 		if(GameObject.Find ("Borboleta") != null )
 		{
 			borboleta = GameObject.Find ("Borboleta");
