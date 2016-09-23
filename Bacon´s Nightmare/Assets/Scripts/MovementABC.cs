@@ -1,12 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlatformMovement : MonoBehaviour 
-{
+public class MovementABC : MonoBehaviour {
+
 
 	private Vector3 posA;
 
 	private Vector3 posB;
+
+	private Vector3 posC;
+
+	private Vector3 posD;
 
 	private Vector3 nexPos;
 
@@ -22,16 +26,28 @@ public class PlatformMovement : MonoBehaviour
 	[SerializeField]
 	private Transform transformA;
 
+	[SerializeField]
+	private Transform transformC;
+
+	[SerializeField]
+	private Transform transformD;
+
+	bool back;
+
 	// Use this for initialization
 	void Start () {
 
 		//posA = childTransform.localPosition;
 		posA = transformA.localPosition;
 		posB = transformB.localPosition;
+		posC = transformC.localPosition;
+		posD = transformD.localPosition;
+
+		back = false;
 
 		nexPos = posB;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		Move ();
@@ -43,10 +59,24 @@ public class PlatformMovement : MonoBehaviour
 		if (Vector3.Distance (childTransform.localPosition, nexPos) <= 0.1) {
 			ChangeDestination ();
 		}
-	
+
 	}
 	private void ChangeDestination(){
 
-		nexPos = nexPos != posA ? posA : posB;
+		if (nexPos == posA) {
+			nexPos = posB;
+			back = false;
+		} else if (nexPos == posB)
+		if (back == false)
+			nexPos = posC;
+		else
+			nexPos = posA;
+		else if (nexPos == posC) {
+			nexPos = posD;
+			back = true;
+		}else if (nexPos == posD) 
+			nexPos = posA;
+
+		
 	}
 }
