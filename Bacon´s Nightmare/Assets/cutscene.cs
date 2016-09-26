@@ -17,6 +17,6 @@ public class cutscene : MonoBehaviour {
 	}
 	public void vaiPlaneta()
 	{
-		SceneManager.LoadScene("Level 02 - alpha");
+		SceneManager.LoadScene("CutScene");
 	}
 }

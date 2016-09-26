@@ -53,10 +53,13 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\CobraController.cs" />
+     <Compile Include="Assets\Scripts\CobraController1.cs" />
+     <Compile Include="Assets\Scripts\CobraG.cs" />
      <Compile Include="Assets\Scripts\FazendeiroController.cs" />
      <Compile Include="Assets\Scripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
+     <Compile Include="Assets\Scripts\MovementABC.cs" />
      <Compile Include="Assets\Scripts\PlatformMovement.cs" />
      <Compile Include="Assets\Scripts\Referencias\GerenciadorSave.cs" />
      <Compile Include="Assets\Scripts\Referencias\Mariov1 (2).cs" />
