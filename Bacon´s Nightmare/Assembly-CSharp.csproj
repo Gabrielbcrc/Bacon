@@ -52,7 +52,6 @@
      <Compile Include="Assets\Scripts\BorboletaController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
-     <Compile Include="Assets\Scripts\CobraController.cs" />
      <Compile Include="Assets\Scripts\CobraController1.cs" />
      <Compile Include="Assets\Scripts\CobraG.cs" />
      <Compile Include="Assets\Scripts\FazendeiroController.cs" />
