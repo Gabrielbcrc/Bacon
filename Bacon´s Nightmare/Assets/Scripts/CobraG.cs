@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CobraController : MonoBehaviour 
+public class CobraG : MonoBehaviour 
 {
 	Animator anim;
 	bool walkLimit;
