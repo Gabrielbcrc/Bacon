@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class Antonito : MonoBehaviour 
 {
 	public Fade fade;
@@ -26,6 +26,7 @@ public class Antonito : MonoBehaviour
 	//float vSpeed;
 	public int life;
 	int appleCont;
+	public Text countText;
 	public bool isEvent;
 	float vSpeed;
 	bool triggerOnce;
@@ -43,6 +44,7 @@ public class Antonito : MonoBehaviour
 		cameraPos = GameObject.Find("Main Camera");
 		warning.SetActive (false);
 		appleCont = 0;
+		setCountText();
 		gameover = false;
 		rgb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
@@ -145,6 +147,7 @@ public class Antonito : MonoBehaviour
 		{
 			appleCont++;
 			other.gameObject.SetActive (false);
+			setCountText();
 		}
 		if(other.tag == "Inimigo")
 		{
@@ -222,7 +225,10 @@ public class Antonito : MonoBehaviour
 		//transform.position = levelManager.currentCheckpoint.transform.position;
 
 	}
-
+	void setCountText()
+	{
+		countText.text = "Hey Apple! " + appleCont.ToString();
+	}
 	void gameOver()
 	{
 		
