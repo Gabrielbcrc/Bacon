@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CobraController1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Antonito.cs">
     <Files>
-      <File FileName="Assets\Scripts\CobraG.cs" Line="16" Column="35" />
+      <File FileName="Assets\Scripts\CobraG.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CobraController1.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MovementABC.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlatformMovement.cs" Line="1" Column="1" />
@@ -12,7 +12,7 @@
       <File FileName="Assets\Scripts\limite.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\seta.cs" Line="1" Column="1" />
       <File FileName="Assets\Evento1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Antonito.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Antonito.cs" Line="47" Column="18" />
       <File FileName="Assets\Scripts\LevelManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MenuController.cs" Line="1" Column="1" />
       <File FileName="Assets\Fade.cs" Line="1" Column="1" />
