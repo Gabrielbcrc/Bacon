@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{43438644-A449-3DEF-71DD-D1230466CDF0}") = "Bacon´s Nightmare", "Assembly-CSharp.csproj", "{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bacon´s Nightmare.CSharp", "Bacon´s Nightmare.CSharp.csproj", "{BF25B37F-C4D6-1851-74E2-31A9C503A53A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF25B37F-C4D6-1851-74E2-31A9C503A53A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF25B37F-C4D6-1851-74E2-31A9C503A53A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF25B37F-C4D6-1851-74E2-31A9C503A53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF25B37F-C4D6-1851-74E2-31A9C503A53A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

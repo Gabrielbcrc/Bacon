@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 879dbd0575030f24fa09ba3cff2abb3b
-timeCreated: 1472198237
+timeCreated: 1475211311
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -49,11 +49,14 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: walk line_0
+    - serializedVersion: 2
+      name: walk line_0
       rect:
         serializedVersion: 2
         x: 2
@@ -64,45 +67,22 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: walk line_1
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: walk line_1
       rect:
         serializedVersion: 2
-        x: 29
+        x: 30
         y: 0
-        width: 518
+        width: 516
         height: 178
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 160, y: 89}
-        - {x: 131, y: 85}
-        - {x: 129, y: 89}
-        - {x: 110, y: 89}
-        - {x: 101, y: 88}
-        - {x: 84, y: 87}
-        - {x: 81, y: 89}
-        - {x: 65, y: 89}
-        - {x: 56, y: 87}
-        - {x: 49, y: 89}
-        - {x: -23, y: 89}
-        - {x: -27, y: 88}
-        - {x: -32, y: 87}
-        - {x: -61, y: 88}
-        - {x: -100, y: 89}
-        - {x: -168, y: 89}
-        - {x: -179, y: 88}
-        - {x: -198, y: 89}
-        - {x: -227, y: 89}
-        - {x: -232, y: 88}
-        - {x: -236, y: 89}
-        - {x: -256, y: 89}
-        - {x: -259, y: 87}
-        - {x: -259, y: -89}
-        - {x: 259, y: -89}
-        - {x: 259, y: 87}
-        - {x: 248, y: 89}
-    - name: walk line_2
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: walk line_2
       rect:
         serializedVersion: 2
         x: 549
@@ -113,6 +93,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 
