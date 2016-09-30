@@ -4,16 +4,23 @@ using UnityEngine.SceneManagement;
 
 public class cutscene : MonoBehaviour {
 
-
+	public GameObject death;
+	public GameObject self;
+	public GameObject vermelho;
 	public AudioSource[] audio;
 	public AudioSource pigFled;
+	public AudioSource BNdeath;
 	// Use this for initialization
+	void Awake(){
+		DontDestroyOnLoad (self);
+		DontDestroyOnLoad (death);
+	}
 	void Start () 
 	{
-
-
+		//PlayerPrefs.SetInt("x",y)
 		//audio = GetComponent<AudioSource>();
 		pigFled = audio [0];
+		BNdeath = audio [1];
 	}
 	
 	// Update is called once per frame
@@ -23,10 +30,17 @@ public class cutscene : MonoBehaviour {
 	}
 	public void vaiPlaneta()
 	{
-		SceneManager.LoadScene("CutScene");
+		Destroy (vermelho.GetComponent<SpriteRenderer> ());
+		SceneManager.LoadScene("Level 01 - alpha");
 	}
 	void tocaMusica(){
-		Debug.Log ("açleuriogçliauorhjglaer");
 		pigFled.Play();
+	}
+	void Mato(){
+		Debug.Log ("Morreu");
+		BNdeath.Play();
+	}
+	void acabou(){
+		PlayerPrefs.SetInt ("passouCutscene", 1);
 	}
 }

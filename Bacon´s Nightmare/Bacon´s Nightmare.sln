@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{4637A377-80A5-7E41-4DE2-591CDB2A69AE}") = "Bacon´s Nightmare", "Assembly-CSharp.csproj", "{E94E8536-3200-4F2F-5038-D1AB699A56F6}"
+Project("{43438644-A449-3DEF-71DD-D1230466CDF0}") = "Bacon´s Nightmare", "Assembly-CSharp.csproj", "{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E94E8536-3200-4F2F-5038-D1AB699A56F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E94E8536-3200-4F2F-5038-D1AB699A56F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E94E8536-3200-4F2F-5038-D1AB699A56F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E94E8536-3200-4F2F-5038-D1AB699A56F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A7E2222-C25B-13D7-A1E4-EB7D7C4AE827}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

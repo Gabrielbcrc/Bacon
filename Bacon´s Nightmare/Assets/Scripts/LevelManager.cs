@@ -11,7 +11,16 @@ public class LevelManager : MonoBehaviour
 	public GameObject balaoBorboleta;
 	float x,y,z;
 	public int checkPoint = 0;
+	public AudioSource[] audio;
+	public AudioSource BNdeath;
 	// Use this for initialization
+	void Awake (){
+		BNdeath = audio [1];
+		if (PlayerPrefs.HasKey ("passouCutscene")) {
+			Debug.Log ("gbbbbbbbbbcf");
+			BNdeath.Play ();
+		}
+	}
 	void Start () 
 	{
 		balaoBorboleta.SetActive(false);
