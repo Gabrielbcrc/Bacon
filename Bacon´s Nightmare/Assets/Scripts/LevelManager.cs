@@ -61,15 +61,21 @@ public class LevelManager : MonoBehaviour
 
 		if (PlayerPrefs.GetInt("Cena") == 1)
 		{
-			Invoke("ativarBalao", 2);
-			balaoBorboleta.transform.position = new Vector2 (porco.transform.position.x +0.75f, porco.transform.position.y + 2);
-			Invoke("desativarBalao", 4f);
+			if (!(PlayerPrefs.GetInt ("passou") == 1)) 
+			{
+				Invoke ("ativarBalao", 2);
+				balaoBorboleta.transform.position = new Vector2 (porco.transform.position.x + 0.75f, porco.transform.position.y + 2);
+				Invoke ("desativarBalao", 4f);
+			}
 		}
 	}
 
 	void FixedUpdate()
 	{
-		balaoBorboleta.transform.position = new Vector2 (porco.transform.position.x +0.75f, porco.transform.position.y + 2);
+		if(!(PlayerPrefs.GetInt("passou") == 1))
+		{
+			balaoBorboleta.transform.position = new Vector2 (porco.transform.position.x +0.75f, porco.transform.position.y + 2);
+		}
 	}
 	// Update is called once per frame
 	void Update () 

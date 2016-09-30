@@ -39,7 +39,11 @@ public class Evento1 : MonoBehaviour
 		if(other.tag == "Player")
 		{
 			porco.blockPlayer ();
-			borboleta.vaiEmbora ();
+			if (GameObject.Find ("Borboleta") != null) 
+			{
+				borboleta.vaiEmbora ();
+			}
+
 			Invoke ("load", 1);
 		}
 	}
