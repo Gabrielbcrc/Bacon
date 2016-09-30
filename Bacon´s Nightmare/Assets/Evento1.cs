@@ -14,6 +14,11 @@ public class Evento1 : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+		if (PlayerPrefs.GetInt ("passou") == 1) 
+		{
+			gameObject.SetActive (false);
+			borboleta.gameObject.SetActive (false);
+		}
 		fade = FindObjectOfType<Fade> ();
 		cameraPos = GameObject.Find("Main Camera");
 		sounds = GetComponents<AudioSource>();
@@ -34,6 +39,7 @@ public class Evento1 : MonoBehaviour
 		if(other.tag == "Player")
 		{
 			porco.blockPlayer ();
+			borboleta.vaiEmbora ();
 			Invoke ("load", 1);
 		}
 	}
