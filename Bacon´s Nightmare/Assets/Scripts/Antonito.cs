@@ -25,6 +25,7 @@ public class Antonito : MonoBehaviour
 	float groundRadius = 0.2f;
 	//float vSpeed;
 	public int life;
+	int appleCont;
 	public bool isEvent;
 	float vSpeed;
 	bool triggerOnce;
@@ -41,7 +42,7 @@ public class Antonito : MonoBehaviour
 		levelManager = FindObjectOfType<LevelManager> ();
 		cameraPos = GameObject.Find("Main Camera");
 		warning.SetActive (false);
-
+		appleCont = 0;
 		gameover = false;
 		rgb = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
@@ -140,6 +141,11 @@ public class Antonito : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
+		if (other.CompareTag ("Coletavel")) 
+		{
+			appleCont++;
+			other.gameObject.SetActive (false);
+		}
 		if(other.tag == "Inimigo")
 		{
 			life--;
@@ -196,9 +202,11 @@ public class Antonito : MonoBehaviour
 
 	public void LoadScreen()
 	{
+		SceneManager.LoadScene("Night Level Design");
 		//levelManager.respawnPlayer ();
 		//life = 1;
 		//anim.Play("Antonito Idle");
+		/*
 		if (PlayerPrefs.GetInt("Cena") == 1)
 		{
 			SceneManager.LoadScene("Level 01 - alpha");
@@ -210,8 +218,9 @@ public class Antonito : MonoBehaviour
 		else if (PlayerPrefs.GetInt("Cena") == 3)
 		{
 			SceneManager.LoadScene("Level 03 - alpha");
-		}
+		}*/
 		//transform.position = levelManager.currentCheckpoint.transform.position;
+
 	}
 
 	void gameOver()

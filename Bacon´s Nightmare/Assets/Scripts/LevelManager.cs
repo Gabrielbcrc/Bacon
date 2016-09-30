@@ -6,6 +6,7 @@ public class LevelManager : MonoBehaviour
 {
 	
 	GameObject borboleta;
+	public GameObject inicioSong;
 	public GameObject currentCheckpoint;
 	public Antonito porco;
 	public GameObject balaoBorboleta;
@@ -13,9 +14,11 @@ public class LevelManager : MonoBehaviour
 	public int checkPoint = 0;
 	public AudioSource[] audio;
 	public AudioSource BNdeath;
+	public AudioSource BNinicio;
 	// Use this for initialization
 	void Awake (){
 		BNdeath = audio [1];
+		BNinicio = audio [0];
 		if (PlayerPrefs.HasKey ("passouCutscene")) {
 			Debug.Log ("gbbbbbbbbbcf");
 			BNdeath.Play ();
@@ -23,6 +26,11 @@ public class LevelManager : MonoBehaviour
 	}
 	void Start () 
 	{
+		if (!PlayerPrefs.HasKey ("passou")) {
+			BNinicio.Play ();
+		} else {
+			Destroy (inicioSong);
+		}
 		balaoBorboleta.SetActive(false);
 		porco = (Antonito) FindObjectOfType(typeof(Antonito));
 		//porco = GameObject.Find ("Antonito!").GetComponent<Antonito> ();

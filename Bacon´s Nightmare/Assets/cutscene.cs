@@ -17,6 +17,7 @@ public class cutscene : MonoBehaviour {
 	}
 	void Start () 
 	{
+		PlayerPrefs.SetInt ("passou", 1);
 		//PlayerPrefs.SetInt("x",y)
 		//audio = GetComponent<AudioSource>();
 		pigFled = audio [0];
@@ -31,7 +32,7 @@ public class cutscene : MonoBehaviour {
 	public void vaiPlaneta()
 	{
 		Destroy (vermelho.GetComponent<SpriteRenderer> ());
-		SceneManager.LoadScene("Level 01 - alpha");
+		SceneManager.LoadScene("Night Level Design");
 	}
 	void tocaMusica(){
 		pigFled.Play();
