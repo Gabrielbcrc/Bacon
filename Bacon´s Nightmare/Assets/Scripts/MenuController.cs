@@ -19,6 +19,7 @@ public class MenuController : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+		GameObject.Find("Fade").GetComponent<Animator>().Play("FadeIn");
 		sounds = GetComponents<AudioSource>();
 		alternar = sounds[0];
 		selecionar = sounds[1];
