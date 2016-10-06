@@ -19,8 +19,8 @@ public class Fim : MonoBehaviour {
 
 		if(other.tag == "Player")
 		{
+			GameObject.Find("Fade").GetComponent<Fade>().fadeOut();
 			porco.blockPlayer ();
-			PlayerPrefs.SetInt ("passou",1);
 
 			Invoke ("load", 1);
 		}

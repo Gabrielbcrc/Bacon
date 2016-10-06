@@ -38,6 +38,7 @@ public class Evento1 : MonoBehaviour
 		
 		if(other.tag == "Player")
 		{
+			GameObject.Find("Fade").GetComponent<Fade>().fadeOut();
 			porco.blockPlayer ();
 			PlayerPrefs.SetInt ("passou",1);
 			if (GameObject.Find ("Borboleta") != null) 

@@ -58,7 +58,6 @@ public class Antonito : MonoBehaviour
 		//PlayerPrefs.DeleteAll (); //deletar todos os prefs TEMPORARIO
 		//fade.fadeIn();
 
-
 		if(PlayerPrefs.HasKey("x"))
 		{
 			//isEvent = false;

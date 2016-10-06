@@ -48,6 +48,8 @@
      <Compile Include="Assets\Apple.cs" />
      <Compile Include="Assets\Evento1.cs" />
      <Compile Include="Assets\Fade.cs" />
+     <Compile Include="Assets\Fim.cs" />
+     <Compile Include="Assets\Formulario.cs" />
      <Compile Include="Assets\NovoJogoCursor.cs" />
      <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\SairCursor.cs" />
@@ -77,6 +79,7 @@
      <Compile Include="Assets\platVertical.cs" />
      <Compile Include="Assets\plataformaAlpha.cs" />
      <Compile Include="Assets\tileR.cs" />
+     <None Include="Assets\Fonts\00copyfont.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
