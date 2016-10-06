@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\seta.cs" />
     <Compile Include="Assets\Scripts\terra.cs" />
     <Compile Include="Assets\cutscene.cs" />
+    <Compile Include="Assets\iniciowave.cs" />
     <Compile Include="Assets\ir_pra_plataforma.cs" />
     <Compile Include="Assets\platController.cs" />
     <Compile Include="Assets\platVertical.cs" />
@@ -103,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\00copyfont.txt" />
+    <None Include="Assets\Fonts\license1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

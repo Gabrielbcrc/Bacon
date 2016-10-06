@@ -23,9 +23,16 @@ public class LevelManager : MonoBehaviour
 			Debug.Log ("gbbbbbbbbbcf");
 			BNdeath.Play ();
 		}
+
 	}
 	void Start () 
 	{
+		PlayerPrefs.SetInt ("maçã",1);
+	/*	if ((PlayerPrefs.GetInt ("maçã") == 1) && (PlayerPrefs.HasKey ("passou"))) {
+			inicioSong.GetComponent<AudioSource>().volume = 0.0f;
+		}else if((PlayerPrefs.GetInt ("maçã") == 1) && (!PlayerPrefs.HasKey ("passou"))) {
+			inicioSong.GetComponent<AudioSource>().volume = 0.0f;
+		}*/
 		if (!PlayerPrefs.HasKey ("passou")) 
 		{
 			//BNinicio.Play ();
@@ -77,6 +84,7 @@ public class LevelManager : MonoBehaviour
 				Invoke ("desativarBalao", 4f);
 			}
 		}
+
 	}
 
 	void FixedUpdate()
