@@ -74,12 +74,14 @@
      <Compile Include="Assets\Scripts\seta.cs" />
      <Compile Include="Assets\Scripts\terra.cs" />
      <Compile Include="Assets\cutscene.cs" />
+     <Compile Include="Assets\iniciowave.cs" />
      <Compile Include="Assets\ir_pra_plataforma.cs" />
      <Compile Include="Assets\platController.cs" />
      <Compile Include="Assets\platVertical.cs" />
      <Compile Include="Assets\plataformaAlpha.cs" />
      <Compile Include="Assets\tileR.cs" />
      <None Include="Assets\Fonts\00copyfont.txt" />
+     <None Include="Assets\Fonts\license1.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

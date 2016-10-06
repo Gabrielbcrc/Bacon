@@ -11,7 +11,8 @@ public class cutscene : MonoBehaviour {
 	public AudioSource pigFled;
 	public AudioSource BNdeath;
 	// Use this for initialization
-	void Awake(){
+	void Awake()
+	{
 		DontDestroyOnLoad (self);
 		DontDestroyOnLoad (death);
 	}
@@ -37,11 +38,13 @@ public class cutscene : MonoBehaviour {
 	void tocaMusica(){
 		pigFled.Play();
 	}
-	void Mato(){
+	void Mato()
+	{
 		Debug.Log ("Morreu");
 		BNdeath.Play();
 	}
-	void acabou(){
+	void acabou()
+	{
 		PlayerPrefs.SetInt ("passouCutscene", 1);
 	}
 }
