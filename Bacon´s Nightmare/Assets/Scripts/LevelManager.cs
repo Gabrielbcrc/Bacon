@@ -23,6 +23,10 @@ public class LevelManager : MonoBehaviour
 			Debug.Log ("gbbbbbbbbbcf");
 			BNdeath.Play ();
 		}
+		if (PlayerPrefs.HasKey ("passou")){
+			Destroy (inicioSong);
+			Destroy (BNinicio);
+		}
 
 	}
 	void Start () 

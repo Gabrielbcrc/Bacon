@@ -13,7 +13,7 @@ public class NovoJogoCursor : MonoBehaviour
 
 	void OnMouseOver()
 	{
-		this.GetComponent<UnityEngine.UI.Text>().color = new Color (255,0,0);
+		this.GetComponent<SpriteRenderer>().color = new Color (255,0,0);
 	}
 
 	void LoadScreen()

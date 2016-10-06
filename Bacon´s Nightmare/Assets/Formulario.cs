@@ -9,6 +9,7 @@ public class Formulario : MonoBehaviour
 //		GameObject.Find("Fade").GetComponent<Animator>().Play("FadeOut");
 //		Invoke("LoadScreen", 1);
 		Application.OpenURL ("https://docs.google.com/forms/d/e/1FAIpQLSfThwtSix09sYqF5XLSq9uOoUs903Qx30Gc763GFmFKqbPSKQ/viewform");
+		Invoke("QuitApp",1);
 	}
 
 	void OnMouseExit(){
@@ -21,5 +22,10 @@ public class Formulario : MonoBehaviour
 
 	void LoadScreen(){
 		SceneManager.LoadScene("Night Level Design");
+	}
+
+	void QuitApp()
+	{
+		Application.Quit();
 	}
 }

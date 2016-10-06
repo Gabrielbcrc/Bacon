@@ -20,6 +20,10 @@ public class iniciowave : MonoBehaviour {
 			Debug.Log("poiuytrewq");
 			Destroy (gameObject);
 		}*/
+		if (PlayerPrefs.HasKey ("passou"))
+		{
+			Destroy (gameObject);
+		}
 	}
 	// Use this for initialization
 	void Start () 
