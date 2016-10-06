@@ -55,7 +55,7 @@ public class BorboletaController : MonoBehaviour
 		{
 			moverVertical();
 			transform.Translate (new Vector2 (15, 15) * Time.deltaTime);
-			Invoke("morraSeya",2);
+			Invoke("morraSeya",0.7f);
 
 		}
 		else if(estado == "fly")
@@ -119,7 +119,7 @@ public class BorboletaController : MonoBehaviour
 	{
 		estado = "embora";
 	}
-	void morraSeya()
+	public void morraSeya()
 	{
 		Destroy(gameObject);
 	}

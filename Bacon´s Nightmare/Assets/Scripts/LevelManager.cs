@@ -26,14 +26,22 @@ public class LevelManager : MonoBehaviour
 	}
 	void Start () 
 	{
-		if (!PlayerPrefs.HasKey ("passou")) {
-			BNinicio.Play ();
-		} else {
+		if (!PlayerPrefs.HasKey ("passou")) 
+		{
+			//BNinicio.Play ();
+			inicioSong.GetComponent<AudioSource>().Play();
+		} else 
+		{
 			Destroy (inicioSong);
 		}
 		balaoBorboleta.SetActive(false);
 		porco = (Antonito) FindObjectOfType(typeof(Antonito));
 		//porco = GameObject.Find ("Antonito!").GetComponent<Antonito> ();
+		if (PlayerPrefs.HasKey("passou")) 
+		{
+			borboleta.gameObject.SetActive (false);
+		}
+
 		if(GameObject.Find ("Borboleta") != null )
 		{
 			borboleta = GameObject.Find ("Borboleta");
@@ -61,7 +69,8 @@ public class LevelManager : MonoBehaviour
 
 		if (PlayerPrefs.GetInt("Cena") == 1)
 		{
-			if (!(PlayerPrefs.GetInt ("passou") == 1)) 
+			//if (!(PlayerPrefs.GetInt ("passou") == 1))
+			if(!PlayerPrefs.HasKey("passou"))
 			{
 				Invoke ("ativarBalao", 2);
 				balaoBorboleta.transform.position = new Vector2 (porco.transform.position.x + 0.75f, porco.transform.position.y + 2);
@@ -72,7 +81,8 @@ public class LevelManager : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		if(!(PlayerPrefs.GetInt("passou") == 1))
+		//if(!(PlayerPrefs.GetInt("passou") == 1))
+		if(!PlayerPrefs.HasKey("passou"))
 		{
 			balaoBorboleta.transform.position = new Vector2 (porco.transform.position.x +0.75f, porco.transform.position.y + 2);
 		}

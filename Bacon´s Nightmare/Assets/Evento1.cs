@@ -39,9 +39,10 @@ public class Evento1 : MonoBehaviour
 		if(other.tag == "Player")
 		{
 			porco.blockPlayer ();
+			PlayerPrefs.SetInt ("passou",1);
 			if (GameObject.Find ("Borboleta") != null) 
 			{
-				borboleta.vaiEmbora ();
+				borboleta.morraSeya();
 			}
 
 			Invoke ("load", 1);

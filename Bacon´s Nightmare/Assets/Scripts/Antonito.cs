@@ -177,12 +177,7 @@ public class Antonito : MonoBehaviour
 			Destroy(other.gameObject);
 			Invoke("desativarWarning", 3);
 		}
-
-
-		if(other.tag == "Borboleta" && triggerOnce)
-		{
 			
-		}
 
 	}
 
