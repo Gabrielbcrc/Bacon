@@ -70,6 +70,7 @@
     <Compile Include="Assets\Evento1.cs" />
     <Compile Include="Assets\Fade.cs" />
     <Compile Include="Assets\Fim.cs" />
+    <Compile Include="Assets\Formulario.cs" />
     <Compile Include="Assets\NovoJogoCursor.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\SairCursor.cs" />
