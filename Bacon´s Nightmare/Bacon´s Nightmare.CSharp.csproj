@@ -69,7 +69,10 @@
     <Compile Include="Assets\Apple.cs" />
     <Compile Include="Assets\Evento1.cs" />
     <Compile Include="Assets\Fade.cs" />
+    <Compile Include="Assets\Fim.cs" />
+    <Compile Include="Assets\NovoJogoCursor.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
+    <Compile Include="Assets\SairCursor.cs" />
     <Compile Include="Assets\SaveCheck.cs" />
     <Compile Include="Assets\Scripts\Antonito.cs" />
     <Compile Include="Assets\Scripts\BorboletaController.cs" />
@@ -96,6 +99,9 @@
     <Compile Include="Assets\platVertical.cs" />
     <Compile Include="Assets\plataformaAlpha.cs" />
     <Compile Include="Assets\tileR.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Fonts\00copyfont.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
