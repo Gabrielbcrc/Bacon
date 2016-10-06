@@ -48,7 +48,9 @@
      <Compile Include="Assets\Apple.cs" />
      <Compile Include="Assets\Evento1.cs" />
      <Compile Include="Assets\Fade.cs" />
+     <Compile Include="Assets\NovoJogoCursor.cs" />
      <Compile Include="Assets\PauseMenu.cs" />
+     <Compile Include="Assets\SairCursor.cs" />
      <Compile Include="Assets\SaveCheck.cs" />
      <Compile Include="Assets\Scripts\Antonito.cs" />
      <Compile Include="Assets\Scripts\BorboletaController.cs" />
