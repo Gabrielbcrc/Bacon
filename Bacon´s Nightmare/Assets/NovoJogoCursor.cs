@@ -9,6 +9,7 @@ public class NovoJogoCursor : MonoBehaviour
 	{
 		GameObject.Find("Fade").GetComponent<Animator>().Play("FadeOut");
 		Invoke("LoadScreen", 1);
+		//PlayerPrefs.DeleteAll ();
 	}
 
 	void OnMouseOver()

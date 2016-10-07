@@ -7,7 +7,7 @@ public class Fim : MonoBehaviour {
 	public Antonito porco;
 	// Use this for initialization
 	void Start () {
-	
+		//PlayerPrefs.DeleteAll ();
 	}
 	
 	// Update is called once per frame
