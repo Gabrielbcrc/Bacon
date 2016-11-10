@@ -1,22 +1,23 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\iniciowave.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Formulario.cs">
     <Files>
       <File FileName="Assets\PauseMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Antonito.cs" Line="233" Column="13" />
-      <File FileName="Assets\Scripts\MenuController.cs" Line="66" Column="58" />
+      <File FileName="Assets\Scripts\Antonito.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MenuController.cs" Line="1" Column="1" />
       <File FileName="Assets\NovoJogoCursor.cs" Line="1" Column="1" />
       <File FileName="Assets\SairCursor.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraController.cs" Line="1" Column="1" />
       <File FileName="Assets\SaveCheck.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="28" Column="23" />
-      <File FileName="Assets\iniciowave.cs" Line="24" Column="3" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\iniciowave.cs" Line="1" Column="1" />
       <File FileName="Assets\Fim.cs" Line="1" Column="1" />
       <File FileName="Assets\Fade.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BorboletaController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Evento1.cs" Line="59" Column="14" />
+      <File FileName="Assets\Evento1.cs" Line="1" Column="1" />
       <File FileName="Assets\Apple.cs" Line="1" Column="1" />
-      <File FileName="Assets\cutscene.cs" Line="26" Column="3" />
+      <File FileName="Assets\cutscene.cs" Line="1" Column="1" />
+      <File FileName="Assets\Formulario.cs" Line="12" Column="124" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

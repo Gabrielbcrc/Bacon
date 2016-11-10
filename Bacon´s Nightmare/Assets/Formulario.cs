@@ -9,7 +9,7 @@ public class Formulario : MonoBehaviour
 //		GameObject.Find("Fade").GetComponent<Animator>().Play("FadeOut");
 //		Invoke("LoadScreen", 1);
 		Invoke("QuitApp",1);
-		Application.OpenURL ("https://docs.google.com/forms/d/e/1FAIpQLSfThwtSix09sYqF5XLSq9uOoUs903Qx30Gc763GFmFKqbPSKQ/viewform");
+		Application.OpenURL ("https://docs.google.com/forms/d/e/1FAIpQLSdwB-m7t1lkdFPYyobWIbVDaa3MTWScMtVnP79acbJbO1sH5g/viewform");
 	}
 
 	void OnMouseExit(){
